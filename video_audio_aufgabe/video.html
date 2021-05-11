@@ -2,19 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Spring in switzerland </title>
 </head>
 <body>
-<h1>Spring</h1>
-<div style="align-items: center">
-<video width="320" height="240" controls>
-    <source src="./media/flowers.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-<audio controls>
-    <source src="./media/Circles.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-</div>
+<h1>Spring BY Elijana Jonuzi</h1>
+
+<p>Small Fact: <br> The MP4, WebM, and Ogg formats are supported by HTML.</p>
+
+<details>
+    <summary>Video Info
+    </summary>
+    <div class="row">
+        <div class="column">
+            <h1>Mp4 Video</h1>
+            <p>Properties of MP4 Videos</p>
+            <ul>
+                <li>most common type of video file format</li>
+                <li>It uses the MPEG-4 encoding algorithm to store video and audio files and text</li>
+                <li>offers lower definition than some others</li>
+            </ul>
+            <video width="200" height="200" controls>
+                <source src="./media/flowers.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="column" >
+            <h1>MOV Video</h1>
+            <p>Properties of MOV Videos</p>
+            <ul>
+                <li>stores high-quality video, audio, and effects</li>
+                <li>these files tend to be quite large</li>
+                <li>use MPEG-4 encoding to play in QuickTime for Windows</li>
+            </ul>
+            <video width="200" height="200" controls>
+                <source src="./media/flowers.mov" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+        <div class="column" >
+            <h2>NOT SUPPORTED</h2>
+            <h1>AVI Video</h1>
+            <p>Properties of AVI Videos</p>
+            <ul>
+                <li> works with nearly every web browser on Windows, Mac, and Linux machines</li>
+                <li>I offers the highest quality but also large file sizes</li>
+                <li>works well for TV viewing</li>
+            </ul>
+            <video width="200" height="200" controls>
+                <source src="./media/flowers.avi" type="video/ogg">
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </div>
+</details>
+<details>
+    <summary>Audio Info</summary>
+    <div class="row">
+        <div class="column">
+            <h1>Mp4 Video</h1>
+            <audio controls>
+                <source src="./media/Circles.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+    </div>
+
+</details>
+
+
 </body>
 </html>
