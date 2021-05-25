@@ -1,0 +1,23 @@
+
+body{
+    display:flex;
+    margin: 0;
+}
+
+.carousel{
+     width:500px;
+     height:500px;
+    overflow:hidden;
+ }
+
+.image_container{
+    transition: transform 0.3s linear;
+    display:flex;
+    transform: translateX(0);
+}
+img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit:cover;
+    dispaly:block;
+}
