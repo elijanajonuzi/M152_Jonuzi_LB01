@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Navbar.css">
     <title>Spring in switzerland </title>
 </head>
 <body>
+<div class="header header-fixed">
+    <div class="navbar container">
+        <div class="logo"><a href="#home">LB01</a></div>
+        <input type="checkbox" id="navbar-toggle" >
+        <label for="navbar-toggle"><i></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">My Page</a></li>
+                <li><a href="../video_audio_aufgabe/video-audio-theorie.html">Audio & Video Info</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 <h1>Spring BY Elijana Jonuzi</h1>
 
 <!---VIDEO -->
 
 <details>
-    <summary>Video Info
+    <summary style="background-color: #dddddd">Video Info
 
     </summary>
     <div class="row">
@@ -61,7 +75,7 @@
 </details>
 <!---AUDIO -->
 <details>
-    <summary>Audio Info</summary>
+    <summary style="background-color: #dddddd">Audio Info</summary>
     <div class="row">
         <p>Small Fact: <br> The MP3, WAV, and OGG audio formats are supported by HTML.</p>
 

@@ -1,31 +1,131 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>m152-16-ap18a Web UI</title>
-<link rel="shortcut icon" href="https://kubernetes.io/images/favicon.png">
-<meta charset="utf-8" content="">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these 
-        
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="me_page/my_page_style.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <script src="me_page/my_page.js" defer></script>
+    <script src="me_page/script_carousel.js" defer></script>
+    <meta charset="UTF-8">
+    <title>My World</title>
 </head>
-
 <body>
-	<h3>Welcome</h3>
-	<h1>Useful links:</h1>
+<div class="header header-fixed">
+    <div class="navbar container">
+        <div class="logo"><a href="#home">LB01</a></div>
+        <input type="checkbox" id="navbar-toggle" >
+        <label for="navbar-toggle"><i></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">My Page</a></li>
+                <li><a href="video_audio_aufgabe/video-audio-theorie.html">Audio & Video Info</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="splash">
+    <img src="me_page/animations/welcome.png" alt="" class="fade-in">
+</div>
 
-	<a href='./installation.html'>installation link</a><br>
-	<a href='me_page/jonuzi.html'> My Page </a><br>
+<div class="row">
+    <div class="column">
+        <h1></h1>
+    </div>
+    <div class="column-center" >
+        <p class="free-text">You can draw on the browser thanks to HTML5 Canvas! Try It!
+        </p>
+        <canvas id="canvas"></canvas>
+        <h1 class="about-me-title">About Me</h1>
+        <br/>
+        <div></div>
+        <p class="free-text">        Hi stranger, I am elijana.<br/>
+            I am a third year computer science student and this an exercise for a school module.<br/>
+            In this module we learn how to use different types of animations. <br/>
+            For example how to create a carousel.<a href="./me_page/jonuzi.html">Link to carousel</a><br/><p/>
+        <div class="carousel">
+            <div class= 'image_container show-on-scroll' id="images">
+                <img src="./me_page/carousel_image/image1.jpeg" alt="" class="img-corousel">
+                <img src="./me_page/carousel_image/image3.jpeg" alt="" class="img-corousel">
+                <img src="./me_page/carousel_image/image4.jpeg" alt="" class="img-corousel">
+                <img src="./me_page/carousel_image/image5.jpeg" alt="" class="img-corousel">
+                <img src="./me_page/carousel_image/image6.jpeg" alt="" class="img-corousel">
+                <img src="./me_page/carousel_image/image7.jpeg" alt="" class="img-corousel">
+            </div>
+        </div>
 
-	<a href='video_audio_aufgabe/video-audio-theorie.html'>Video-Audio</a>
+            <p class="free-text">How to create SVG images that move like this, very nice isn't it?<br/><p>
+        <div class="svg-image">
 
-		<p>By Elijana Jonuzi</p>
+        <svg version="1.1" width="320" height="320" viewBox="0 0 320 320" fill="none" stroke="#000" stroke-linecap="round"
+        >
+            <defs>
+                <path id="r1">
+                    <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin"/>
+                </path>
+                <path id="r2">
+                    <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+                    <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+                </path>
+                <path id="r3">
+                    <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+                    <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+                </path>
+                <path id="r4">
+                    <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s"  repeatCount="indefinite" begin="p1.begin+3s"/>
+
+                    <animate attributeName="stroke-width" values="0;1;2;3;0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"/>
+                    <animate
+                            attributeName="cx"
+                            from="599"
+                            to="3948934"
+                            dur="5s"
+                            begin="p1.begin+3s"/>
+                </path>
+
+            </defs>
+            <use xlink:href="#r1"/>
+            <use xlink:href="#r1" transform="rotate(60 160 160)"/>
+            <use xlink:href="#r1" transform="rotate(120 160 160)"/>
+            <use xlink:href="#r1" transform="rotate(180 160 160)"/>
+            <use xlink:href="#r1" transform="rotate(240 160 160)"/>
+            <use xlink:href="#r1" transform="rotate(300 160 160)"/>
+            <use xlink:href="#r2" transform="rotate(30 160 160)"/>
+            <use xlink:href="#r2" transform="rotate(90 160 160)"/>
+            <use xlink:href="#r2" transform="rotate(150 160 160)"/>
+            <use xlink:href="#r2" transform="rotate(210 160 160)"/>
+            <use xlink:href="#r2" transform="rotate(270 160 160)"/>
+            <use xlink:href="#r2" transform="rotate(330 160 160)"/>
+            <use xlink:href="#r3"/>
+            <use xlink:href="#r3" transform="rotate(60 160 160)"/>
+            <use xlink:href="#r3" transform="rotate(120 160 160)"/>
+            <use xlink:href="#r3" transform="rotate(180 160 160)"/>
+            <use xlink:href="#r3" transform="rotate(240 160 160)"/>
+            <use xlink:href="#r3" transform="rotate(300 160 160)"/>
+            <use xlink:href="#r4"/>
+            <use xlink:href="#r4" transform="rotate(60 160 160)"/>
+            <use xlink:href="#r4" transform="rotate(120 160 160)"/>
+            <use xlink:href="#r4" transform="rotate(180 160 160)"/>
+            <use xlink:href="#r4" transform="rotate(240 160 160)"/>
+            <use xlink:href="#r4" transform="rotate(300 160 160)"/>
+
+
+        </svg>
+    </div>
+
+            <p class="free-text"> how to animate images like zooming them when you scroll down a page.<br/></p>
+        <div class="image-scroll">
+            <img src="./me_page/carousel_image/image1.jpeg" data-scroll-zoom />
+        </div>
+
+
+
+    </div>
+    <div class="column" >
+        <h1></h1>
+    </div>
+
+</div>
+
+
 </body>
 </html>
