@@ -15,6 +15,6 @@ Nice to have: Home page with a carousel with all the news.
 - Elijana Jonuzi
 
   
-![Logo](./styleguide/logo.JPG)
+![Logo](lb02/styleguide/logo.JPG)
 
     
