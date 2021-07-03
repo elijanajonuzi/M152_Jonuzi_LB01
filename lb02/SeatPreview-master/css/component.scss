@@ -422,35 +422,19 @@ body{
 .action--seats {
 	padding: 0.5em 0 0.5em 2.5em;
 	margin: 0 0 0 1em;
-	color: #21c252;
+	color: #c9ada7;
 	margin: 0 auto;
 	display: inline-block;
 	background: url(../img/seats.svg) no-repeat 0% 50%;
 	background-size: auto 70%;
 }
 
-.action--play {
-	position: absolute;
-	pointer-events: none;
-	z-index: 30;
-	top: 50%;
-	left: 50%;
-	width: 2.5em;
-	height: 2.5em;
-	margin-top: -20px;
-	opacity: 0;
-	-webkit-transform: translate3d(-50%, -50%, 0);
-	transform: translate3d(-50%, -50%, 0);
-	background: url(../img/play.svg) no-repeat 0% 50%;
-	background-size: auto 100%;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-}
+
 
 .action--lookaround {
 	position: fixed;
 	pointer-events: none;
-	z-index: 100;
+	z-index: 10000;
 	top: 50%;
 	left: 50%;
 	width: 2em;
@@ -484,7 +468,7 @@ body{
 
 .action--buy {
 	margin: 1em auto;
-	background: #26AD4F;
+	background: #c9ada7;
 	font-size: 1em;
 	width: 100%;
 	padding: 0.75em 1.5em;
@@ -494,7 +478,7 @@ body{
 }
 
 .action--buy:hover {
-	background: #21c252;
+	background: #c9ada7;
 }
 
 /* Fallback */
