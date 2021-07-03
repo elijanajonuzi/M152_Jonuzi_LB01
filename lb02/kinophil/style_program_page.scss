@@ -60,6 +60,7 @@ body{
   $font--size--calc: calc(2vw + 10px);
   $transition--easing: cubic-bezier(.77,0,.175,1);
   position: fixed;
+  text-decoration:none;
   z-index:1;
   &:before,&:after{
     content: "";
@@ -86,7 +87,6 @@ body{
     text-align: center;
     font-size: $font--size--calc;
     font-weight: 200;
-    cursor: pointer;
   }
   &__list-item{
     position: relative;
@@ -334,4 +334,24 @@ body.nav-active{
   width: 50%;
   bottom: 10px;
   &:focus { outline: 2px dotted #55d7dc; }
+}
+/* IMPRESSUM*/
+.impressum-img{
+  width: 100%;
+  height: 100%;
+}
+
+.impressum-text {
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  background-color:rgba(74, 78, 105, 0.5);
+  padding: 100px 100px 10px 100px;
+}
+.impressum-info{
+  position: relative;
+  text-align: center;
+  color: #f2e9e4;
+  font-size:30px;
+
 }
